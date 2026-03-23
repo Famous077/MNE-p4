@@ -7,10 +7,12 @@ This PoC shows replacing that with mffpy — a dedicated MFF reader/writer libra
 resulting in cleaner code, richer event data, and support for all MFF flavors.
 AreaLegacy MNE approachThis PoC (mffpy)XML parsingManual lxml/defusedxml codemffpy.XML.from_file()Binary readnumpy.fromfile + custom offsetsmffpy.get_physical_samples_from_epoch()EventsSimple array, loses label/durationFull event track with label, code, durationMFF flavorsContinuous only (well supported)Continuous, Segmented, AveragedUnitsManual µV → V conversionmffpy returns physical units
 
-Project structure
+Project structure: 
+
 ![File Structure](image.png)
 
 Here is how the file is connected with eachother: 
+
 ![alt text](image-1.png)
 
 Updated file structure : 
