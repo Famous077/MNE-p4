@@ -13,8 +13,10 @@ Project structure
 Here is how the file is connected with eachother: 
 ![alt text](image-1.png)
 
-Updated file structure 
+Updated file structure : 
+
 ![alt text](image-2.png)
+
 
 Setup
 Activate your venv first
@@ -30,7 +32,7 @@ Run the tests
 powershellpytest tests/ -v
 
 
-Next steps
+Next steps: 
 
 Epochs support — read_epochs_mff() for segmented MFF files
 Evoked support — read_evokeds_mff() for averaged MFF files
