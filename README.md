@@ -24,13 +24,17 @@ Setup
 Activate your venv first
 venv\Scripts\activate
 
-# Install dependencies
+
+# Install dependencies: 
+
 pip install mne mffpy numpy scipy pytest
 
-Run the demo
+Run the demo: 
+
 powershellpython demo.py
 
-Run the tests
+Run the tests: 
+
 powershellpytest tests/ -v
 
 
