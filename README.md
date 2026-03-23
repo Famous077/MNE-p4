@@ -3,9 +3,8 @@ MNE-Python - Proof of Concept
 GSoC Project no.3 : Refactoring mne.io.egi to Use mffpy for Reliable EGI-MFF Format Handling
 
 MNE-Python currently reads EGI MFF files using hand-rolled XML and binary parsers.
-This PoC shows replacing that with mffpy — a dedicated MFF reader/writer library —
+This PoC shows replacing that with mffpy - a dedicated MFF reader/writer library -
 resulting in cleaner code, richer event data, and support for all MFF flavors.
-AreaLegacy MNE approachThis PoC (mffpy)XML parsingManual lxml/defusedxml codemffpy.XML.from_file()Binary readnumpy.fromfile + custom offsetsmffpy.get_physical_samples_from_epoch()EventsSimple array, loses label/durationFull event track with label, code, durationMFF flavorsContinuous only (well supported)Continuous, Segmented, AveragedUnitsManual µV → V conversionmffpy returns physical units
 
 Project structure: 
 
