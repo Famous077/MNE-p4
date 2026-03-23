@@ -31,17 +31,11 @@ pip install mne mffpy numpy scipy pytest
 
 Run the demo: 
 
-powershellpython demo.py
+python demo.py
 
 Run the tests: 
 
-powershellpytest tests/ -v
+pytest tests/ -v
 
 
-Next steps: 
 
-Epochs support — read_epochs_mff() for segmented MFF files
-Evoked support — read_evokeds_mff() for averaged MFF files
-Write support — RawArray → mffpy.Writer → .mff export
-Rich events — Map mffpy event tracks to MNE Annotations
-Integration — Replace mne/io/egi/egimff.py internals with this approach
